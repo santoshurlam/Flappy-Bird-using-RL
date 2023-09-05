@@ -30,4 +30,4 @@ The action space consists of 4 actions -
 
 **RESULTS**
 
-![Frozen Lake result]("C:\Users\Santu\Videos\Bandicam\Frozen lake video.mp4")
+![Frozen Lake result](https://github.com/santoshurlam/Summer_Project26/assets/99114485/a1c50257-0204-4192-8d92-920ae44618e8)
