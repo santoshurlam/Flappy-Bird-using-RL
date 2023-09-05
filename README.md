@@ -1,33 +1,47 @@
-**STEP ONE : FROZEN LAKE OPENAI GYM**
+# Frozen Lake Environment
 
+#### Created in [Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake) environment.
+
+## Requirements
+To run this environment, you need to have the following libraries installed:
+- numpy
+- matplotlib
+- gym
+
+## Description
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
 
-![Frozen Lake Gym](https://www.gymlibrary.dev/_images/frozen_lake.gif)
+### Non-Slippery Environment
 
-**IMPLEMENTATION**
+![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
 
-**ACTION SPACE**
+### Slippery Environment
 
-The action space consists of 4 actions -
+![](https://i.imgur.com/9dF44vt.gif)
 
-	LEFT - 0
-	DOWN - 1
-	RIGHT- 2
-	UP   - 3
+This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
 
-**STATE SPACE**
+## Environment Description
+  ### State Space
+  - There are 16 states in 4x4 Environment and 64 states in 8x8 Environment
+  - Each state has 0 as reward except terminal state
+  - Any state may contain lake and the aim of the agent is to reach the Goal in optimal way using policy and value iteration
+  - Dictionary contain every state with taking all 4 action and transition probability to take action with reaward getting.
+  ### Action Space
+  There are 4 actions for every state that agent can take,
+  - Left - 0
+  - Down - 1
+  - Right - 2
+  - Up - 3
 
-* For 4x4 grid there are 16 cells and each cell represents a integer starting from 0 to 15.
-* Any cell may contain a obstacle (Hole) or Frozen lake and the aim of the agent is to reach the Goal in optimal way using policy and value iteration.
-
-**REWARD FUNCTION**
-
-* +1 if the agent reaches the goal cell.
-* 0 otherwise.
-
-**ALGORITHM**
-* Policy and Value iteration algorithms are used in this Environment to get the optimal policy.
-
-**RESULTS**
-
-![Frozen Lake result](https://github.com/santoshurlam/Summer_Project26/assets/99114485/a1c50257-0204-4192-8d92-920ae44618e8)
+## Algorithm
+Here Dynamic Programming method is used for convergence of policy.
+This can also be done by two ways
+### Policy Iteration
+  - Evaluating Value function for all states
+  - Acting greedy toward policy using action value function evaluated using value function
+  - Iterated many times upto convergence of policy
+### Value Iteration
+  - Evaluating Value function for particular state
+  - Taking Greedy of all action it can take from that state using Action value function
+  - Then converging policy
