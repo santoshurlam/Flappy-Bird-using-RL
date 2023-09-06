@@ -45,3 +45,21 @@ This can also be done by two ways
   - Evaluating Value function for particular state
   - Taking Greedy of all action it can take from that state using Action value function
   - Then converging policy
+
+
+# Empty Room Environment
+
+
+**Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
+
+
+**Installation:**
+
+pip install minigrid
+
+**Action Space**
+The action space Used here -
+
+	Turn LEFT - 0
+	Turn Right - 1
+	Move Forward - 2
