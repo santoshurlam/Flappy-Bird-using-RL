@@ -6,7 +6,7 @@
 To run this environment, you need to have the following libraries installed:
 - numpy
 - matplotlib
-- gym
+- gymnasium
 
 ## Description
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
