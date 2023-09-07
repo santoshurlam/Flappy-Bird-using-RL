@@ -56,7 +56,7 @@ for epd in range(number_of_episodes+20):
         td_error = reward + gamma*Q[nxt_state_space][nxt_action] - Q[state_space][action]
         E_Traces[state_space][action] += 1
         Q[state_space] += alpha*td_error*E_Traces[state_space]
-        E_Traces[state_space] = lambda_value*gamma*E_Traces[state_space]
+        E_Traces[state_space] = lambda_value*gamma*E_Traces[state_space] # Backward view of SARSA.
         step+=1
         action = nxt_action
         # state_space = nxt_state_space
