@@ -68,4 +68,5 @@ The action space Used here -
 * Similarily, there are 36 states in MiniGrid-Empty-8x8-v0 environmnet where each cell is represnted by (x,y) where x = 1 to 6 & y = 1 to 6.
 * State space also requires the direction of the agent facing towards that can be accessed through user built-in functions from the minigrid files which is "agent_dir".
 * Agent aim is to reach the final goal state in an optimized way by using the algorithms like Monte-carlo, SARSA, SARSA Lambda, Q-Learning.
-  
+
+
