@@ -51,6 +51,8 @@ This can also be done by two ways
 
 #### Created in [MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) environment.
 
+![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
+
 **Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
 
 ## Requirements
@@ -60,9 +62,12 @@ To run this environment, you need to have the following libraries installed:
 - gymnasium
 - minigrid
 
-**Installation:**
-
-pip install minigrid
+## Installation
+Use this code for intalling some library
+- pip install minigrid
+- pip install numpy
+- pip install matplotlib
+- pip install gymnasium
 
 **Action Space**
 The action space Used here -
@@ -76,4 +81,27 @@ The action space Used here -
 * State space also requires the direction of the agent facing towards that can be accessed through user built-in functions from the minigrid files which is "agent_dir".
 * Agent aim is to reach the final goal state in an optimized way by using the algorithms like Monte-carlo, SARSA, SARSA Lambda, Q-Learning.
 
+### Rewards
+Goal state has reward 1 otherwise 0 everywhere.
+
+## Algorithms used in this Environment
+Four algorithm are used to converge the policy and take optimal actions,
+- Monte-Carlo
+- SARSA
+- SARSA Lambda
+- Q-Learning
+
+## Results
+
+### MiniGrid-Empty-6x6-v0
+
+![Imgur](https://i.imgur.com/XAtvwPw.png)
+
+![Imgur](https://i.imgur.com/cH8jTrB.png)
+
+### MiniGrid-Empty-8x8-v0
+
+![Imgur](https://i.imgur.com/ccNcDDY.png)
+
+![Imgur](https://i.imgur.com/oyboRlw.png)
 
