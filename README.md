@@ -144,3 +144,24 @@ Four algorithm are used to converge the policy and take optimal actions,
 ![Imgur](https://i.imgur.com/rt272zf.png)
 
 ![Imgur](https://i.imgur.com/3IZPERz.png)
+
+
+## Flappy Bird Environment
+
+Created in [Flappy-bird-Gym](https://github.com/Talendar/flappy-bird-gym) Environment
+
+<br>
+
+<p align="center">
+  <img align="center" 
+       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/yellow_bird_playing.gif?raw=true" 
+       width="200"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img align="center" 
+       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/red_bird_start_screen.gif?raw=true" 
+       width="200"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img align="center" 
+       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/blue_bird_playing.gif?raw=true" 
+       width="200"/>
+</p>
