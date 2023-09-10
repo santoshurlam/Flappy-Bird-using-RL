@@ -53,6 +53,12 @@ This can also be done by two ways
 
 **Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
 
+## Requirements
+To run this environment, you need to have the following libraries installed:
+- numpy
+- matplotlib
+- gymnasium
+- minigrid
 
 **Installation:**
 
