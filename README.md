@@ -95,13 +95,40 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 ### MiniGrid-Empty-6x6-v0
 
+#### Q-Learning
+
 ![Imgur](https://i.imgur.com/XAtvwPw.png)
 
 ![Imgur](https://i.imgur.com/cH8jTrB.png)
 
+#### SARSA Lambda
+
+![Imgur](https://i.imgur.com/rCYwe09.png)
+
+![Imgur](https://i.imgur.com/wEBPvGc.png)
+
+#### SARSA
+
+![Imgur](https://i.imgur.com/R1pCS8W.png)
+
+![Imgur](https://i.imgur.com/YbeuXHG.png)
+
 ### MiniGrid-Empty-8x8-v0
+
+#### Q-Learning
 
 ![Imgur](https://i.imgur.com/ccNcDDY.png)
 
 ![Imgur](https://i.imgur.com/oyboRlw.png)
 
+#### SARSA Lambda
+
+![Imgur](https://i.imgur.com/1h3GO15.png)
+
+![Imgur](https://i.imgur.com/rSOJwio.png)
+
+#### SARSA
+
+![Imgur](https://i.imgur.com/xYcDy7i.png)
+
+![Imgur](https://i.imgur.com/UpN9emG.png)
