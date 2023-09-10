@@ -113,6 +113,12 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 ![Imgur](https://i.imgur.com/YbeuXHG.png)
 
+#### Monte-Carlo
+
+![Imgur](https://i.imgur.com/K31TLSe.png)
+
+![Imgur](https://i.imgur.com/3hiPeww.png)
+
 ### MiniGrid-Empty-8x8-v0
 
 #### Q-Learning
@@ -132,3 +138,9 @@ Four algorithm are used to converge the policy and take optimal actions,
 ![Imgur](https://i.imgur.com/xYcDy7i.png)
 
 ![Imgur](https://i.imgur.com/UpN9emG.png)
+
+#### Monte-Carlo
+
+![Imgur](https://i.imgur.com/rt272zf.png)
+
+![Imgur](https://i.imgur.com/3IZPERz.png)
