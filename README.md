@@ -49,6 +49,7 @@ This can also be done by two ways
 
 # Empty Room Environment
 
+#### Created in [MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) environment.
 
 **Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
 
