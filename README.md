@@ -150,6 +150,16 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 Created in [Flappy-bird-Gym](https://github.com/Talendar/flappy-bird-gym) Environment
 
+The two environments differ only on the type of observations they yield for the
+agents. The "FlappyBird-rgb-v0" environment, yields RGB-arrays (images)
+representing the game's screen. The "FlappyBird-v0" environment, on the other
+hand, yields simple numerical information about the game's state as
+observations. The yielded attributes are the:
+
+* horizontal distance to the next pipe;
+* difference between the player's y position and the next hole's y position.
+
+
 <br>
 
 <p align="center">
@@ -165,3 +175,10 @@ Created in [Flappy-bird-Gym](https://github.com/Talendar/flappy-bird-gym) Enviro
        src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/blue_bird_playing.gif?raw=true" 
        width="200"/>
 </p>
+
+## Installation
+
+To install `flappy-bird-gym`, simply run the following command:
+
+    $ pip install flappy-bird-gym
+    
