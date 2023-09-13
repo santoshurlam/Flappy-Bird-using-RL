@@ -93,92 +93,61 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 ## Results
 
-### MiniGrid-Empty-6x6-v0
+![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
 
-#### Q-Learning
+## Graphs
 
-![Imgur](https://i.imgur.com/XAtvwPw.png)
+![](https://i.imgur.com/uirrrAY.png) ![](https://i.imgur.com/19KmYUc.png)
 
-![Imgur](https://i.imgur.com/cH8jTrB.png)
+# Flappy Bird Environment
 
-#### SARSA Lambda
+#### Created in [Flappy-Bird](https://github.com/Talendar/flappy-bird-gym) Environment.
 
-![Imgur](https://i.imgur.com/rCYwe09.png)
+## Description
 
-![Imgur](https://i.imgur.com/wEBPvGc.png)
+**Description** - Flappy Bird is the main Project, Here we are training our agent(bird) to cross the maximum pipes in given Episodes with chenging different parameters using algorithms and concept learned in previous environment as assignment.
 
-#### SARSA
+Flappy Bird Environment is solved by Q-Learning Algorithm.
 
-![Imgur](https://i.imgur.com/R1pCS8W.png)
+### Requirements
+To run this environment, you need to have the following libraries installed:
+- numpy
+- flappy_bird_gym (Imported from Github clone)
+- pygame
+- matplotlib.pyplot (For Graphs)
+- time
 
-![Imgur](https://i.imgur.com/YbeuXHG.png)
+## Environment Description
 
-#### Monte-Carlo
+### State Space
 
-![Imgur](https://i.imgur.com/K31TLSe.png)
+- This environment contain state as location coordinate of bird centre in environment.
+- Observations has distance of bird from pipe as Horizontal distance and difference between the player's y position and the next hole's y position as Vertical distance
+- State always get reset after crossing pipes
+- Agent also has direction it is going after flap in observation space
 
-![Imgur](https://i.imgur.com/3hiPeww.png)
+### Action Space
 
-### MiniGrid-Empty-8x8-v0
+- There are two actions in this Environment
+  - 0 = Do Nothing
+  - 1 = Flap
+- After taking Flap as action bird changes its direction by 45° (In this case taken direction to 0°)
 
-#### Q-Learning
+### Reward
 
-![Imgur](https://i.imgur.com/ccNcDDY.png)
+- There is +1 reward at every step agent take
+- At passing every pipe, reward is +5
+- When Crashed reward will be -10.
 
-![Imgur](https://i.imgur.com/oyboRlw.png)
+## Algorithm
 
-#### SARSA Lambda
+Flappy Bird Environment is solved by Q-Learning Environment.
 
-![Imgur](https://i.imgur.com/1h3GO15.png)
+## Results
 
-![Imgur](https://i.imgur.com/rSOJwio.png)
+(To be uploaded)
 
-#### SARSA
+## Graphs
 
-![Imgur](https://i.imgur.com/xYcDy7i.png)
-
-![Imgur](https://i.imgur.com/UpN9emG.png)
-
-#### Monte-Carlo
-
-![Imgur](https://i.imgur.com/rt272zf.png)
-
-![Imgur](https://i.imgur.com/3IZPERz.png)
-
-
-## Flappy Bird Environment
-
-Created in [Flappy-bird-Gym](https://github.com/Talendar/flappy-bird-gym) Environment
-
-The two environments differ only on the type of observations they yield for the
-agents. The "FlappyBird-rgb-v0" environment, yields RGB-arrays (images)
-representing the game's screen. The "FlappyBird-v0" environment, on the other
-hand, yields simple numerical information about the game's state as
-observations. The yielded attributes are the:
-
-* horizontal distance to the next pipe;
-* difference between the player's y position and the next hole's y position.
-
-
-<br>
-
-<p align="center">
-  <img align="center" 
-       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/yellow_bird_playing.gif?raw=true" 
-       width="200"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img align="center" 
-       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/red_bird_start_screen.gif?raw=true" 
-       width="200"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img align="center" 
-       src="https://github.com/Talendar/flappy-bird-gym/blob/main/imgs/blue_bird_playing.gif?raw=true" 
-       width="200"/>
-</p>
-
-## Installation
-
-To install `flappy-bird-gym`, simply run the following command:
-
-    $ pip install flappy-bird-gym
-    
+![](https://i.imgur.com/vT6QK30.png)
+![](https://i.imgur.com/y24YItY.png)
