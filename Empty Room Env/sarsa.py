@@ -2,8 +2,8 @@ import gymnasium as gym
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-# env = gym.make('MiniGrid-Empty-6x6-v0')
-env = gym.make('MiniGrid-Empty-8x8-v0')
+env = gym.make('MiniGrid-Empty-6x6-v0')
+# env = gym.make('MiniGrid-Empty-8x8-v0')
 
 returns = []
 epds = []
@@ -50,8 +50,8 @@ for i in range(number_of_episodes+20):
     epds.append(i+1)
     epsilon = (-1*i/number_of_episodes) + 1
     # print("No. of episodes Completed: ", i+1)
-# env = gym.make('MiniGrid-Empty-6x6-v0',render_mode = 'human')
-env = gym.make('MiniGrid-Empty-8x8-v0',render_mode = 'human')
+env = gym.make('MiniGrid-Empty-6x6-v0',render_mode = 'human')
+# env = gym.make('MiniGrid-Empty-8x8-v0',render_mode = 'human')
 n=0
 while n < 1:
     env.reset()
