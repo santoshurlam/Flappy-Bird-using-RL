@@ -9,9 +9,9 @@ This Frozen Lake environment is solved by Dynamic Programming Method using Reinf
 
 ## Requirements
 To run this environment, you need to have the following libraries installed:
-- numpy
-- matplotlib
-- gymnasium
+- NumPy
+- Matplotlib
+- Gymnasium
 
 This library can be installed by using keyword "pip install (library)".
 
@@ -70,8 +70,8 @@ MiniGrid Empty Environment is solved by different algorithms Monte Carlo, SARSA,
 
 ## Requirements
 To run this environment, you need to have the following libraries installed:
-- numpy
-- matplotlib
+- NumPy
+- Matplotlib
 - gymnasium
 - minigrid
 
@@ -126,10 +126,10 @@ Flappy Bird Environment is solved by Q-Learning Algorithm.
 
 ### Requirements
 To run this environment, you need to have the following libraries installed:
-- numpy
+- NumPy
 - flappy_bird_gym (Imported from Github clone)
-- pygame
-- matplotlib.pyplot (For Graphs)
+- Pygame
+- Matplotlib.pyplot (For Graphs)
 - time
 
 ## Environment Description
