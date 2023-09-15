@@ -2,9 +2,8 @@ import gymnasium as gym
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-# import useful_funcs as uf
-# env = gym.make("MiniGrid-Empty-6x6-v0")
-env = gym.make('MiniGrid-Empty-8x8-v0')
+env = gym.make("MiniGrid-Empty-6x6-v0")
+# env = gym.make('MiniGrid-Empty-8x8-v0')
 Q_table = {}
 alpha = 0.1
 exp_prob = 1.0
@@ -61,8 +60,8 @@ for epd in range(num_epds+20):
     steps_to_goal.append(steps)
 print("policy: ",policy)      
 print(Q_table)
-# env = gym.make("MiniGrid-Empty-6x6-v0",render_mode = 'human')
-env = gym.make('MiniGrid-Empty-8x8-v0',render_mode = 'human')
+env = gym.make("MiniGrid-Empty-6x6-v0",render_mode = 'human')
+# env = gym.make('MiniGrid-Empty-8x8-v0',render_mode = 'human')
 env.reset()
 epd_rew = 0
 for i in range(len(policy)):
@@ -72,16 +71,16 @@ for i in range(len(policy)):
     env.render()
 env.close()
 
-# plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
-plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
+plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
+# plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
 
 plt.plot(epds,steps_to_goal)
 plt.xlabel("Number of episodes")
 plt.ylabel("Steps to reach goal")
 plt.show()
 
-plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
-# plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
+# plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
+plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
 plt.plot(epds, returns)
 plt.xlabel("Number of episodes")
 plt.ylabel("Reward at each episode")
