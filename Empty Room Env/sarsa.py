@@ -42,14 +42,12 @@ for i in range(number_of_episodes+20):
             action = np.random.randint(0,3)
         else:
             action = np.argmax(Q[state_space])
-        # print("Action2: ", action)  
         Q[a][b] += alpha*((reward + gamma * Q[state_space][action]) - Q[a][b])
         step+=1
     steps_to_goal.append(step)
     returns.append(reward)
     epds.append(i+1)
     epsilon = (-1*i/number_of_episodes) + 1
-    # print("No. of episodes Completed: ", i+1)
 env = gym.make('MiniGrid-Empty-6x6-v0',render_mode = 'human')
 # env = gym.make('MiniGrid-Empty-8x8-v0',render_mode = 'human')
 n=0
@@ -68,14 +66,14 @@ print("optimal_policy: ",Policy)
 
 """Graphs between Number of episodes vs steps to reach goal and Number of episodes vs reward function."""
 
-plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
-# plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
+# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
+plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
 plt.plot(epds,returns)
 plt.xlabel("Number of episodes")
 plt.ylabel("Reward at each episode")
 plt.show()
-plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
-# plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
+# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
+plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
 plt.plot(epds,steps_to_goal)
 plt.xlabel("Number of episodes")
 plt.ylabel("Steps to reach goal")
