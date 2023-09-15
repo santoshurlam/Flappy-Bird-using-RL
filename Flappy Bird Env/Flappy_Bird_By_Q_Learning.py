@@ -134,7 +134,7 @@ plt.xlabel("Number of episodes")
 plt.ylabel("Reward at each episode")
 plt.show()
 
-plt.title("FlappyBird-v0 using Q-Learning Algorithm")
+plt.title("FlappyBird-v0 using Q-Learning Algorithm for test episodes")
 plt.plot(test_epds, test_rewards)
 plt.xlabel("Number of episodes")
 plt.ylabel("Total reward at each episode")
