@@ -122,6 +122,8 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 Flappy Bird Environment is solved by Q-Learning Algorithm.
 
+**Note:-** Here the flappy bird algorithm python file was created inside the cloned repository to use the flappy-bird-gym as imported module in the file.
+
 ### Requirements
 To run this environment, you need to have the following libraries installed:
 - numpy
