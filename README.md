@@ -5,19 +5,34 @@
 
 * This Environment structure is of by 4x4 and 8x8 Grids and those each grid may contain a frozen lake or hole and the final goal state has gift.
 * It is model-based Environment.
+
 **Aim:**
 * The agent has to reach the goal state in optimal path by using dynamic programming.
+
+
+### Deterministic Environment
+
+![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
+
+### Stochastic Environment
+
+![](https://i.imgur.com/9dF44vt.gif)
+
 
 ## State Space
 * Each grid or cell or state represnted by integer starting from 0 to 15 for 4x4 grid and 0 to 63 for 8x8 grid.
 * If the agent moves towards boundary of grid from a state by taking an action it will be in the same state.
+
 ## Action Space
 
-There are 4 actions for every state that agent can take ;
-  - Left -  0
-  - Down -  1
-  - Right - 2
-  - Up -    3
+The actions can be taken by agent in any state are;
+
+```bash
+  Left - 0
+  Down - 1
+  Right- 2
+  Up   - 3
+```
 
 ## Reward
 * If the agent falls in hole then reward is 0 and if it landed on frozen lake then also reward is 0 but if the agent reaches the goal state it receives the reward of 1.
@@ -33,6 +48,24 @@ This can also be done by two ways
   - Method for finding the optimal value function by updating the bellman equation iteratively.
   - Taking an action greedily from all actions for a particular state by using action value function.
   - Iterate it until the convergence of policy.
+
+# Minigrid Environment
+
+**Description:**
+
+* This Minigrid Environment is Empty room, it consists of one agent and one goal state and it doesn't contain any obstacles.
+*  This have MiniGrid-Empty-6x6-v0 and MiniGrid-Empty-8x8-v0 environments.
+* This is a model-free Environment.
+
+**Aim:**
+
+* The agent has to reach the goal state in most optimal way.
+
+![](https://i.imgur.com/4lCwL8g.gif) ![](https://i.imgur.com/tIZ0FNG.gif)
+
+
+
+
 # Flappy Bird Environment
 
 **Description:**
@@ -44,13 +77,15 @@ This can also be done by two ways
 **Aim:**
 * The bird (agent) has to learn to score itself by crossing the pipes using Q-Learning Algorithm.
 
-![Flappy Bird Render](https://i.imgur.com/epEFm8u.gif)
-
+<p align = "center">
+    <img src = "https://i.imgur.com/ZgW3wYP.gif" alt = "Flappy bird">
+</p>
 
 ## Requirements
 * Matplotlib
 * NumPy
 * flappy_bird_gym (Cloned Repository from [Flappy-bird-gym](https://github.com/Talendar/flappy-bird-gym))
+
 **Note:** Algorithm file was created in cloned Repository folder to directly import the flappy_bird_gym into the code file.
 
 ```bash
@@ -58,11 +93,28 @@ This can also be done by two ways
   pip install NumPy
 ```
     
-## Environment Variables
-
-**State Space**
+## State Space
 
 * This Environment consists of state as location of the bird (agent) center.
 * Location is the coordinates of the bird which briefs about the horizontal distance between the bird's center to next pipe's center and vertical distance between bird's center to hole center of lower pipe.
 * State always getting reset after either hitting the pipe or crashing on base.
 * Agent moves upward direction only if it flaps since the PLAYER_VEL_ROT = 0 and player_rot = 0 degrees but initially it was 45 degrees.
+
+## Action Space
+
+The actions can be taken by the agent in any state are;
+
+```bash
+  Flap to fly- 1
+  Do nothing - 0
+```
+## Reward 
+
+* If the bird crosses the pipes it receives +5 as reward.
+* If the bird hits the pipe or falls on ground it receives -10 as reward.
+* If the bird stays alive it receives the +1 as reward for every time step.
+
+## Algorithm
+
+* Q-Learning Algorithm is used to train the agent in this environment.
+
