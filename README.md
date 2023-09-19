@@ -63,9 +63,23 @@ This can also be done by two ways
 
 ![](https://i.imgur.com/4lCwL8g.gif) ![](https://i.imgur.com/tIZ0FNG.gif)
 
+## Rewards
 
+* Every state has reward 0 except at goal state.
+* Goal state has reward 1.
 
+## Algorithms
+```bash
+ Monte-Carlo
+ SARSA
+ SARSA Lambda
+ Q-Learning
+```
+## Results
+#### MiniGrid-Empty-6x6-v0
+![Graph 1](https://i.imgur.com/cISSqmA.png)
 
+![Graph 2](https://i.imgur.com/TbHxtFL.png)
 # Flappy Bird Environment
 
 **Description:**
