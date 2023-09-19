@@ -118,3 +118,6 @@ The actions can be taken by the agent in any state are;
 
 * Q-Learning Algorithm is used to train the agent in this environment.
 
+## Results
+
+![Imgur](https://i.imgur.com/BE1O5Wa.png)
