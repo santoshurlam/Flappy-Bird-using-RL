@@ -63,6 +63,29 @@ This can also be done by two ways
 
 ![](https://i.imgur.com/4lCwL8g.gif) ![](https://i.imgur.com/tIZ0FNG.gif)
 
+## State Space
+
+- There are 16 states in MiniGrid-Empty-6x6-v0 environment and each state is represented by (x,y) where x = 1 to 4 and y = 1 to 4 
+- And there are 36 states in MiniGrid-Empty-8x8-v0 environment and each cell is represented by (x,y) where x = 1 to 6 and y = 1 to 6
+- State space also contain the direction of the agent at that state, the direction are as follows,
+  	- 0 - Right 
+  	- 1 - Down
+  	- 2 - Left
+  	- 3 - Up
+- Obseravtion contain iamge array which can be used to identify where the agent is in environment.
+
+
+## Action Space
+
+There are three action agent can take to change state or direction;
+
+```bash
+  - 0 - Turn Left
+  - 1 - Turn Right
+  - 2 - Move Forward
+
+```
+
 ## Rewards
 
 * Every state has reward 0 except at goal state.
