@@ -89,8 +89,10 @@ An agent can take three actions to alter its state,
 
 ## Rewards
 
-* Each state has a reward of zero, except for the goal state.
-* The reward for achieving the goal state is 1.
+* Success earns a reward of '1 - 0.9 * (step_count / max_steps)' while failure earns '0'.
+* 'max_steps' refers to the maximum number of steps an agent can take in an episode.
+* The 'step_count' records the number of steps taken by the agent during an episode, but it cannot exceed the 'max_steps' limit.
+
 ## Algorithms
 ```bash
  Monte-Carlo
