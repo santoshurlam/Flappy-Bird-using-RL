@@ -25,6 +25,7 @@ def Q_table_generator():
     sorted_dict = {i: Q_table[i] for i in my_keys}
     return sorted_dict
 
+'''The Q_table_generator function that has been developed is more precise when used on smaller environments.'''
 
 Q_table = Q_table_generator()
 # policy = uf.random_policy_generator()
