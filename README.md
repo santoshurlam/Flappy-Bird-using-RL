@@ -35,7 +35,8 @@ In any given state, an agent can take various actions
 ```
 
 ## Reward
-* If the agent falls into the hole or lands on a frozen lake, the reward is 0. However, if it reaches the goal state, it receives a reward of 1.
+* If the agent falls into the hole or lands on a frozen lake, the reward is 0.
+* However, if it reaches the goal state, it receives a reward of 1.
 
 ## Algorithms
 The Dynamic Programming method is utilized to achieve policy convergence.
