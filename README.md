@@ -102,9 +102,9 @@ An agent can take three actions to alter its state,
 ```
 ## Results
 #### MiniGrid-Empty-6x6-v0
-![Graph 1](https://i.imgur.com/cISSqmA.png)
+![Graph 1](https://i.imgur.com/spQjmOb.png)
 
-![Graph 2](https://i.imgur.com/TbHxtFL.png)
+![Graph 2](https://i.imgur.com/kXaOTd5.png)
 # Flappy Bird Environment
 
 **Aim:**
