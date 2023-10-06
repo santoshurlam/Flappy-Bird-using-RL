@@ -14,7 +14,7 @@ gamma = 0.99
 alpha = 0.1
 epsilon = 1.0
 lambda_value = 0.9
-number_of_episodes = 150
+number_of_episodes = 200
 max_steps = 200
 for epd in range(number_of_episodes+20):
     env.reset()
@@ -84,18 +84,3 @@ while n < 1:
 env.close()
 print("episode_reward: ",epd_rew)
 print("optimal_policy: ",Policy)
-
-"""Graphs between Number of episodes vs steps to reach goal and Number of episodes vs reward function."""
-
-# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Lambda Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using SARSA Lambda Algorithm")
-plt.plot(epds,returns)
-plt.xlabel("Number of episodes")
-plt.ylabel("Reward at each episode")
-plt.show()
-# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Lambda Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using SARSA Lambda Algorithm")
-plt.plot(epds,steps_to_goal)
-plt.xlabel("Number of episodes")
-plt.ylabel("Steps to reach goal")
-plt.show()
