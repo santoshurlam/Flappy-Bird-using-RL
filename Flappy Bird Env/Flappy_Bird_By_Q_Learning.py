@@ -5,9 +5,9 @@ import time
 import pandas as pd
 
 
-'''Q Learning Algorithm is used in this code'''
+'''The code utilizes the Q Learning Algorithm.'''
 
-env = flappy_bird_gym.make('FlappyBird-v0') # Initializing the environment
+env = flappy_bird_gym.make('FlappyBird-v0') # Setting up the environment.
 
 Q_table = {}
 
