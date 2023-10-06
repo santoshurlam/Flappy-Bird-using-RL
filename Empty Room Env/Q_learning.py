@@ -8,7 +8,7 @@ Q_table = {}
 alpha = 0.1
 exp_prob = 1.0
 min_exp_prob = 0.0
-num_epds = 100
+num_epds = 200
 max_steps = 300
 gamma = 0.99
 returns = []
@@ -71,17 +71,3 @@ for i in range(len(policy)):
     env.render()
 env.close()
 
-plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
-# plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
-
-plt.plot(epds,steps_to_goal)
-plt.xlabel("Number of episodes")
-plt.ylabel("Steps to reach goal")
-plt.show()
-
-# plt.title("MiniGrid-Empty-8x8-v0 using Q-Learning Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using Q-Learning Algorithm")
-plt.plot(epds, returns)
-plt.xlabel("Number of episodes")
-plt.ylabel("Reward at each episode")
-plt.show()
