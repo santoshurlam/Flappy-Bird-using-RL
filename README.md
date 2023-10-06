@@ -1,5 +1,5 @@
 
-## Frozen Lake Environment
+# Frozen Lake Environment
 
 **Aim:**
 * To achieve the desired outcome efficiently, the agent needs to find the most effective route using dynamic programming.
