@@ -106,6 +106,7 @@ An agent can take three actions to alter its state,
 
 **Aim:**
 * The agent bird learns to score by crossing pipes with the Q-Learning Algorithm.
+
 **Description:**
 
 * The game has a bird as the agent and randomly generated pipes. The bird can only move vertically while the pipes move horizontally. There is also a base and background.
