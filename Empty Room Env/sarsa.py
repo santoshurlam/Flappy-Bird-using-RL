@@ -13,7 +13,7 @@ Q = {}
 gamma = 0.99
 alpha = 0.5
 epsilon = 1.0
-number_of_episodes = 60
+number_of_episodes = 200
 for i in range(number_of_episodes+20):
     env.reset()
     if np.random.rand() < epsilon and epsilon > 0:
@@ -63,18 +63,3 @@ while n < 1:
 env.close()
 print("episode_reward: ",epd_rew)
 print("optimal_policy: ",Policy)
-
-"""Graphs between Number of episodes vs steps to reach goal and Number of episodes vs reward function."""
-
-# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
-plt.plot(epds,returns)
-plt.xlabel("Number of episodes")
-plt.ylabel("Reward at each episode")
-plt.show()
-# plt.title("MiniGrid-Empty-8x8-v0 using SARSA Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using SARSA Algorithm")
-plt.plot(epds,steps_to_goal)
-plt.xlabel("Number of episodes")
-plt.ylabel("Steps to reach goal")
-plt.show()
