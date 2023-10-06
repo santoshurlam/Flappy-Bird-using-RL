@@ -153,7 +153,7 @@ Here are the possible moves that the agent can make at any given state:
 
 ## Algorithm
 
-*In this environment, the agent is trained using the Q-Learning Algorithm.
+* In this environment, the agent is trained using the Q-Learning Algorithm.
 
 ## Results
 
