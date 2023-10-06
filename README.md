@@ -1,13 +1,13 @@
 
 # Frozen Lake Environment
 
+**Aim:**
+* To achieve the desired outcome efficiently, the agent needs to find the most effective route using dynamic programming.
+
 **Description:**
 
-* This Environment structure consists of 4x4 and 8x8 Grids and each grid may contain a frozen lake or hole and the final goal state has a gift.
+* This environment is composed of grids in 4x4 and 8x8 sizes. Each grid can either be a frozen lake or a hole, and the objective is to reach the final grid containing a gift.
 * It is a model-based Environment.
-
-**Aim:**
-* The agent must reach the goal state in the optimal path using dynamic programming.
 
 
 ### Deterministic Environment
@@ -20,12 +20,12 @@
 
 
 ## State Space
-* Each grid cell or state is represented by an integer starting from 0 to 15 for a 4x4 grid and 0 to 63 for an 8x8 grid.
-* If the agent moves towards the boundary of the grid from a state by taking an action it will be in the same state.
+* For a 4x4 grid, each cell or state is represented by an integer from 0 to 15. For an 8x8 grid, the range is from 0 to 63.
+* If an agent takes an action towards the grid boundary, it remains in the same state.
 
 ## Action Space
 
-The actions that can be taken by an agent in any state are;
+In any given state, an agent can take various actions
 
 ```bash
   Left - 0
@@ -35,49 +35,49 @@ The actions that can be taken by an agent in any state are;
 ```
 
 ## Reward
-* If the agent falls in the hole then the reward is 0 and if it lands on a frozen lake then the reward is 0 but if the agent reaches the goal state it receives the reward of 1.
+* If the agent falls into the hole or lands on a frozen lake, the reward is 0. However, if it reaches the goal state, it receives a reward of 1.
 
 ## Algorithms
-This Dynamic Programming method is used for the convergence of policy.
-Two ways can also do this
+The Dynamic Programming method is utilized to achieve policy convergence.
+There are two alternative methods to accomplish this task.
 ### Policy Iteration
-  - Evaluating Value function for all states
-  - Acting greedily towards policy using action value function evaluated using a value function
-  - Iterate it until the convergence of policy.
+  - Computing value function for all states.
+  - Using the action value function to evaluate policy with greediness.
+  - Continue iterating until the policy reaches convergence.
 ### Value Iteration
-  - Method for finding the optimal value function by updating the Bellman equation iteratively.
-  - Taking an action greedily from all actions for a particular state by using the action-value function.
-  - Iterate it until the convergence of policy.
+  - A technique for determining the best value function through iterative updates of the Bellman equation.
+  - Taking the best action for a state using the action-value function.
+  - Continue the iteration until the policy converges.
 
 # Minigrid Environment
 
-**Description:**
-
-* This Minigrid Environment is an Empty room, it consists of one agent and one goal state and it doesn't contain any obstacles.
-*  This have MiniGrid-Empty-6x6-v0 and MiniGrid-Empty-8x8-v0 environments.
-* This is a model-free Environment.
-
 **Aim:**
 
-* The agent has to reach the goal state in the most optimal way.
+* The objective for the agent is to achieve the goal state in the most efficient manner possible.
+
+**Description:**
+
+* The Minigrid Environment is an empty room containing one agent and one goal state, with no obstacles.
+* There are two environments available: MiniGrid-Empty-6x6-v0 and MiniGrid-Empty-8x8-v0.
+* The environment is model-free.
+
 
 ![](https://i.imgur.com/4lCwL8g.gif) ![](https://i.imgur.com/tIZ0FNG.gif)
 
 ## State Space
 
-- There are 16 states in MiniGrid-Empty-6x6-v0 environment and each state is represented by (x,y) where x = 1 to 4 and y = 1 to 4 
-- And there are 36 states in MiniGrid-Empty-8x8-v0 environment and each cell is represented by (x,y) where x = 1 to 6 and y = 1 to 6
-- State space also contains the direction of the agent at that state, the direction is as follows,
+- Each state in MiniGrid-Empty-6x6-v0 is represented by (x,y) coordinates, where x and y range from 1 to 4 among the 16 states. 
+- In the MiniGrid-Empty-8x8-v0 environment, there are 36 states represented by (x,y) coordinates where x and y range from 1 to 6.
+- The state space includes the direction of the agent, which is indicated as follows:
   	- 0 - Right 
   	- 1 - Down
   	- 2 - Left
   	- 3 - Up
-- Observation contains an image array that can be used to identify where the agent is in the environment.
-
+- The observation includes an image array that can be utilized to locate the agent within the environment.
 
 ## Action Space
 
-There are three actions an agent can take to change state or direction;
+An agent can take three actions to alter its state,
 
 ```bash
   - 0 - Turn Left
@@ -88,9 +88,8 @@ There are three actions an agent can take to change state or direction;
 
 ## Rewards
 
-* Every state has a reward 0 except at the goal state.
-* Goal state has reward 1.
-
+* Each state has a reward of zero, except for the goal state.
+* The reward for achieving the goal state is 1.
 ## Algorithms
 ```bash
  Monte-Carlo
@@ -105,14 +104,12 @@ There are three actions an agent can take to change state or direction;
 ![Graph 2](https://i.imgur.com/TbHxtFL.png)
 # Flappy Bird Environment
 
+**Aim:**
+* The agent bird learns to score by crossing pipes with the Q-Learning Algorithm.
 **Description:**
 
-* This Environment consists of an agent (Bird) and also randomly generating pipes (Upper and Lower pipes) with constant pipe gap size (a gap between upper and lower pipe) and Base and background. The bird (agent) can move in a vertical direction only and the pipes that are generating along with the Background move in the horizontal direction.
-
-* Flappy Bird Environment is a model-free Environment.
-
-**Aim:**
-* The bird (agent) has to learn to score itself by crossing the pipes using the Q-Learning Algorithm.
+* The game has a bird as the agent and randomly generated pipes. The bird can only move vertically while the pipes move horizontally. There is also a base and background.
+* The Flappy Bird Environment is a model-free environment.
 
 <p align = "center">
     <img src = "https://i.imgur.com/ZgW3wYP.gif" alt = "Flappy bird">
@@ -123,23 +120,22 @@ There are three actions an agent can take to change state or direction;
 * NumPy
 * flappy_bird_gym (Cloned Repository from [Flappy-bird-gym](https://github.com/Talendar/flappy-bird-gym))
 
-**Note:** An Algorithm file was created in the cloned Repository folder to directly import the flappy_bird_gym into the code file.
-
 ```bash
   pip install Matplotlib
   pip install NumPy
 ```
-    
+**Note:** An algorithm Python file was created in the cloned repository folder to import flappy_bird_gym directly into the code.
+
 ## State Space
 
-* This Environment consists of the state as the location of the bird (agent) center.
-* Location is the coordinates of the bird which briefs about the horizontal distance between the bird's center to the next pipe's center and the vertical distance between the bird's center to the hole center of the lower pipe.
-* State always getting reset after either hitting the pipe or crashing on base.
+* The environment comprises the bird (agent) center's location as its state.
+* Location shows bird's distance from the next pipe and lower pipe's hole center.
+* The state keeps resetting every time I hit the pipe or crash on the base.
 * Agent moves upward direction only if it flaps since the PLAYER_VEL_ROT = 0 and player_rot = 0 degrees but initially it was 45 degrees.
 
 ## Action Space
 
-The actions that can be taken by the agent in any state are;
+Here are the possible moves that the agent can make at any given state:
 
 ```bash
   Flap to fly- 1
@@ -147,13 +143,13 @@ The actions that can be taken by the agent in any state are;
 ```
 ## Reward 
 
-* If the bird crosses the pipes it receives +5 as a reward.
-* If the bird hits the pipe or falls on the ground it receives -10 as a reward.
-* If the bird stays alive it receives the +1 as a reward for every time step.
+* When the bird crosses the pipes, it earns a reward of +5.
+* If the bird collides with the pipe or hits the ground, it will receive a penalty of -10.
+* If the bird survives, it will be rewarded with +1 for each time step.
 
 ## Algorithm
 
-* The Q-Learning Algorithm is used to train the agent in this environment.
+*In this environment, the agent is trained using the Q-Learning Algorithm.
 
 ## Results
 
