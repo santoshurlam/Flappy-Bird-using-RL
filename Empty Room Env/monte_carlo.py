@@ -33,7 +33,7 @@ steps_to_goal = []
 # epsilons = []
 returns = []
 epds = []
-num_eps = 150
+num_eps = 200
 gamma = 0.9
 alpha = 0.4
 epsilon = 1.0
@@ -105,19 +105,4 @@ for i in range(len(policy)):
     epd_rew += rew
     env.render()
 env.close()
-
-"""Graphs between Number of episodes vs steps to reach goal and Number of episodes vs reward function."""
-
-# plt.title("MiniGrid-Empty-8x8-v0 using Monte Carlo Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using Monte Carlo Algorithm")
-plt.plot(epds, returns)
-plt.xlabel("Number of episodes")
-plt.ylabel("Reward at each episode")
-plt.show()
-# plt.title("MiniGrid-Empty-8x8-v0 using Monte Carlo Algorithm")
-plt.title("MiniGrid-Empty-6x6-v0 using Monte Carlo Algorithm")
-plt.plot(epds, steps_to_goal)
-plt.xlabel("Number of episodes")
-plt.ylabel("Steps to reach goal")
-plt.show()
 
