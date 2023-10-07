@@ -41,11 +41,11 @@ In any given state, an agent can take various actions
 ## Algorithms
 The Dynamic Programming method is utilized to achieve policy convergence.
 There are two alternative methods to accomplish this task.
-### Policy Iteration
+#### Policy Iteration
   - Computing value function for all states.
   - Using the action value function to evaluate policy with greediness.
   - Continue iterating until the policy reaches convergence.
-### Value Iteration
+#### Value Iteration
   - A technique for determining the best value function through iterative updates of the Bellman equation.
   - Taking the best action for a state using the action-value function.
   - Continue the iteration until the policy converges.
