@@ -142,7 +142,7 @@ An agent can take three actions to alter its state,
 Here are the possible moves that the agent can make at any given state:
 
 ```bash
-  Flap to fly- 1
+  Flap       - 1
   Do nothing - 0
 ```
 ## Reward 
