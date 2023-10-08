@@ -171,7 +171,8 @@ Here are the possible moves that the agent can make at any given state:
 
 Training results
 
+![img1](https://i.imgur.com/lNUzNbv.png)
 
 Testing results
 
-
+![img2](https://i.imgur.com/HZYYGty.png)
