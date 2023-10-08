@@ -126,7 +126,7 @@ An agent can take three actions to alter its state,
 * The Flappy Bird Environment is a model-free environment.
 
 <p align = "center">
-    <img src = "https://i.imgur.com/kLc6o2F.gif" alt = "Flappy bird">
+    <img src = "https://i.imgur.com/ZgW3wYP.gif" alt = "Flappy bird">
 </p>
 
 
