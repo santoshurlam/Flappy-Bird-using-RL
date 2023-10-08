@@ -125,9 +125,7 @@ An agent can take three actions to alter its state,
 * The game has a bird as the agent and randomly generated pipes. The bird can only move vertically while the pipes move horizontally. There is also a base and background.
 * The Flappy Bird Environment is a model-free environment.
 
-<p align = "center">
-    <img src = "https://i.imgur.com/ZgW3wYP.gif" alt = "Flappy bird">
-</p>
+![](https://i.imgur.com/kLc6o2F.gif)
 
 ## Requirements
 * Matplotlib
