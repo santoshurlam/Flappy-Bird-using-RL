@@ -8,6 +8,7 @@
 
 * This environment is composed of grids in 4x4 and 8x8 sizes. Each grid can either be a frozen lake or a hole, and the objective is to reach the final grid containing a gift.
 * It is a model-based Environment.
+* It is also a Sparse reward Environment.
 
 
 ### Deterministic Environment
