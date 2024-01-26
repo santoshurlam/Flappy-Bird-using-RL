@@ -55,11 +55,11 @@ There are two alternative methods to accomplish this task.
 
 #### FrozenLake-v1 (Deterministic)
 
-![Deterministic](https://imgur.com/KfVPK6t.png)
+![Deterministic](https://imgur.com/YH7GJLH.png)
 
 #### FrozenLake-v1 (Stochastic)
 
-![Stochastic](https://i.imgur.com/bPGPDrX.png)
+![Stochastic](https://imgur.com/1zgo11Q.png)
 
 # Minigrid Environment
 
@@ -127,9 +127,8 @@ An agent can take three actions to alter its state,
 * The Flappy Bird Environment is a model-free environment.
 
 <p align = "center">
-    <img src = "https://i.imgur.com/ZgW3wYP.gif" alt = "Flappy bird">
+    <img src = "https://imgur.com/OiJRPQV.gif" alt = "Flappy bird">
 </p>
-
 
 
 ## Requirements
