@@ -55,7 +55,7 @@ There are two alternative methods to accomplish this task.
 
 #### FrozenLake-v1 (Deterministic)
 
-![Deterministic](https://i.imgur.com/zBB5PSV.png)
+![Deterministic](https://imgur.com/KfVPK6t.png)
 
 #### FrozenLake-v1 (Stochastic)
 
