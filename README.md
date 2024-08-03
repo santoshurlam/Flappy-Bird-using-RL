@@ -11,15 +11,6 @@
 * It is also a Sparse reward Environment.
 
 
-### Deterministic Environment
-
-![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
-
-### Stochastic Environment
-
-![](https://i.imgur.com/9dF44vt.gif)
-
-
 ## State Space
 * For a 4x4 grid, each cell or state is represented by an integer from 0 to 15. For an 8x8 grid, the range is from 0 to 63.
 * If an agent takes an action towards the grid boundary, it remains in the same state.
