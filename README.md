@@ -10,6 +10,11 @@
 * It is a model-based Environment.
 * It is also a Sparse reward Environment.
 
+### Deterministic Environment
+![](https://imgur.com/B5uy3aI.gif) ![](https://imgur.com/97Y2swX.gif)
+
+### Stochastic Environment
+![](https://imgur.com/WNDBDCD.gif)
 
 ## State Space
 * For a 4x4 grid, each cell or state is represented by an integer from 0 to 15. For an 8x8 grid, the range is from 0 to 63.
