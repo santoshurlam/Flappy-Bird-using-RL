@@ -42,15 +42,6 @@ There are two alternative methods to accomplish this task.
   - Taking the best action for a state using the action-value function.
   - Continue the iteration until the policy converges.
 
-## Results
-
-#### FrozenLake-v1 (Deterministic)
-
-![Deterministic](https://imgur.com/YH7GJLH.png)
-
-#### FrozenLake-v1 (Stochastic)
-
-![Stochastic](https://imgur.com/1zgo11Q.png)
 
 # Minigrid Environment
 
